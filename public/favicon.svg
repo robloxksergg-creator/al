@@ -1,22 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Chamomile flower icon">
-  <!-- White petals -->
-  <g fill="#FFFFFF" stroke="#E6E6E6" stroke-width="0.5">
-    <ellipse cx="32" cy="10" rx="6" ry="10" transform="rotate(0 32 32) translate(0 -12)"/>
-  </g>
-  <!-- petals drawn explicitly for consistent shape -->
-  <g fill="#FFFFFF" stroke="#E6E6E6" stroke-width="0.5">
-    <ellipse cx="32" cy="6" rx="6" ry="10" transform="rotate(0 32 32)"/>
-    <ellipse cx="32" cy="6" rx="6" ry="10" transform="rotate(45 32 32)"/>
-    <ellipse cx="32" cy="6" rx="6" ry="10" transform="rotate(90 32 32)"/>
-    <ellipse cx="32" cy="6" rx="6" ry="10" transform="rotate(135 32 32)"/>
-    <ellipse cx="32" cy="6" rx="6" ry="10" transform="rotate(180 32 32)"/>
-    <ellipse cx="32" cy="6" rx="6" ry="10" transform="rotate(225 32 32)"/>
-    <ellipse cx="32" cy="6" rx="6" ry="10" transform="rotate(270 32 32)"/>
-    <ellipse cx="32" cy="6" rx="6" ry="10" transform="rotate(315 32 32)"/>
-  </g>
-  <!-- yellow center -->
-  <circle cx="32" cy="24" r="8" fill="#FFDD44" stroke="#E6B800" stroke-width="0.5" />
-  <!-- subtle background rounded square to help visibility as favicon -->
-  <rect x="2" y="2" width="60" height="60" rx="8" ry="8" fill="transparent"/>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <title>Live 3D</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="32" fill="url(#g)"/>
+  <path d="M40 40 L88 40 L56 88 Z" fill="#fff"/>
 </svg>

@@ -25,6 +25,10 @@ export const production = {
 // Категории для фильтра (опционально)
 export const categories = ["Все", "Персонажи", "Окружение", "Пропсы", "Анимация"] as const;
 
+const publicPath = import.meta.env.BASE_URL;
+const resolveAsset = (path: string) => `${publicPath}${path.replace(/^\//, "")}`;
+
+
 export type Work = {
   id: string;
   title: string;
@@ -42,120 +46,120 @@ export const works: Work[] = [
     id: "2",
     title: "2",
     category: "Пропсы",
-    image: "/works/optimized/2-1200.jpg",
+    image: resolveAsset("/works/optimized/2-1200.jpg"),
   },
   {
     id: "31",
     title: "31",
     category: "Пропсы",
-    image: "/works/optimized/31-1200.jpg",
+    image: resolveAsset("/works/optimized/31-1200.jpg"),
   },
   {
     id: "4",
     title: "4",
     category: "Пропсы",
-    image: "/works/optimized/4-1200.jpg",
+    image: resolveAsset("/works/optimized/4-1200.jpg"),
   },
   {
     id: "8c23ebf0a315ad3f",
     title: "8c23ebf0a315ad3f",
     category: "Пропсы",
-    image: "/works/optimized/8c23ebf0a315ad3f-1200.jpg",
+    image: resolveAsset("/works/optimized/8c23ebf0a315ad3f-1200.jpg"),
   },
   {
     id: "9",
     title: "9",
     category: "Пропсы",
-    image: "/works/optimized/9-1200.jpg",
+    image: resolveAsset("/works/optimized/9-1200.jpg"),
   },
   {
     id: "daily_daily_isaac_items",
     title: "Daily daily isaac items",
     category: "Пропсы",
-    image: "/works/optimized/Daily_daily_isaac_items-1200.jpg",
+    image: resolveAsset("/works/optimized/Daily_daily_isaac_items-1200.jpg"),
   },
   {
     id: "image",
     title: "Image",
     category: "Пропсы",
-    image: "/works/optimized/image-1200.jpg",
+    image: resolveAsset("/works/optimized/image-1200.jpg"),
   },
   {
     id: "liveent-apple-image",
     title: "Liveent Apple",
     category: "Пропсы",
-    image: "/works/optimized/liveent-apple-image-1200.jpg",
+    image: resolveAsset("/works/optimized/liveent-apple-image-1200.jpg"),
   },
   {
     id: "liveent-cherry",
     title: "Liveent Cherry",
     category: "Пропсы",
-    image: "/works/optimized/liveent-cherry-1200.jpg",
+    image: resolveAsset("/works/optimized/liveent-cherry-1200.jpg"),
   },
   {
     id: "liveent-cookies-romashka",
     title: "Liveent Cookies Romashka",
     category: "Пропсы",
-    image: "/works/optimized/liveent-cookies-romashka-1200.jpg",
+    image: resolveAsset("/works/optimized/liveent-cookies-romashka-1200.jpg"),
   },
   {
     id: "LiveАрт",
     title: "LiveАрт",
     category: "Персонажи",
-    image: "/works/optimized/LiveАрт-1200.jpg",
+    image: resolveAsset("/works/optimized/LiveАрт-1200.jpg"),
   },
   {
     id: "MiraKGB1",
     title: "MiraKGB1",
     category: "Персонажи",
-    image: "/works/optimized/MiraKGB1-1200.jpg",
+    image: resolveAsset("/works/optimized/MiraKGB1-1200.jpg"),
   },
   {
     id: "pawuk",
     title: "Pawuk",
     category: "Персонажи",
-    image: "/works/optimized/pawuk-1200.jpg",
+    image: resolveAsset("/works/optimized/pawuk-1200.jpg"),
   },
   {
     id: "Snowman",
     title: "Snowman",
     category: "Персонажи",
-    image: "/works/optimized/Snowman-1200.jpg",
+    image: resolveAsset("/works/optimized/Snowman-1200.jpg"),
   },
   {
     id: "kat",
     title: "кат",
     category: "Персонажи",
-    image: "/works/optimized/кат-1200.jpg",
+    image: resolveAsset("/works/optimized/кат-1200.jpg"),
   },
   // Видео (сгенерированные миниатюры см. public/works/*.jpg)
   {
     id: "Mom-s-Heels",
     title: "Mom's Heels",
     category: "Анимация",
-    image: "/works/optimized/Mom-s-Heels-1200.jpg",
-    video: "/works/Mom-s-Heels.mp4",
+    image: resolveAsset("/works/optimized/Mom-s-Heels-1200.jpg"),
+    video: resolveAsset("/works/Mom-s-Heels.mp4"),
   },
   {
     id: "Mom-s-Lipstick",
     title: "Mom's Lipstick",
     category: "Анимация",
-    image: "/works/optimized/Mom-s-Lipstick-1200.jpg",
-    video: "/works/Mom-s-Lipstick.mp4",
+    image: resolveAsset("/works/optimized/Mom-s-Lipstick-1200.jpg"),
+    video: resolveAsset("/works/Mom-s-Lipstick.mp4"),
   },
   {
     id: "Mom-s-Underwear",
     title: "Mom's Underwear",
     category: "Анимация",
-    image: "/works/optimized/Mom-s-Underwear-1200.jpg",
-    video: "/works/Mom-s-Underwear.mp4",
+    image: resolveAsset("/works/optimized/Mom-s-Underwear-1200.jpg"),
+    video: resolveAsset("/works/Mom-s-Underwear.mp4"),
   },
   {
     id: "Wire-Coat-Hanger",
     title: "Wire Coat Hanger",
     category: "Анимация",
-    image: "/works/optimized/Wire-Coat-Hanger-1200.jpg",
-    video: "/works/Wire-Coat-Hanger.mp4",
+    image: resolveAsset("/works/optimized/Wire-Coat-Hanger-1200.jpg"),
+    video: resolveAsset("/works/Wire-Coat-Hanger.mp4"),
   },
 ];
 
