@@ -121,11 +121,19 @@ function Portfolio() {
             className="max-w-6xl w-full max-h-[90vh] flex flex-col items-center gap-4"
             onClick={(e) => e.stopPropagation()}
           >
-            <img
-              src={active.image}
-              alt={active.title}
-              className="max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl"
-            />
+            {active.video ? (
+              <video
+                src={active.video}
+                controls
+                className="max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl"
+              />
+            ) : (
+              <img
+                src={active.image}
+                alt={active.title}
+                className="max-w-full max-h-[75vh] object-contain rounded-xl shadow-2xl"
+              />
+            )}
             <div className="text-center">
               <div className="text-xs text-primary uppercase tracking-wider">{t(catKey[active.category])}</div>
               <div className="text-xl font-semibold">{active.title}</div>

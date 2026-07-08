@@ -30,58 +30,132 @@ export type Work = {
   title: string;
   category: (typeof categories)[number];
   image: string;      // <— ссылка на картинку
+  video?: string;     // <— опциональная ссылка на видео (mp4/mov)
   description?: string;
   official?: boolean; // <— true = официальная работа (для клиента/студии)
   client?: string;    // <— имя клиента/проекта (опционально)
 };
 
 export const works: Work[] = [
-  {
-    id: "1",
-    title: "Neon Warrior",
-    category: "Персонажи",
-    image: "https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=1200&h=900&fit=crop",
-    description: "Стилизованный персонаж в киберпанк-эстетике.",
-    official: true,
-    client: "Flux Production",
-  },
+  // Загрузка из public/works — сгенерировано автоматически из содержимого C:\Live 3D
   {
     id: "2",
-    title: "Ancient Ruins",
-    category: "Окружение",
-    image: "https://images.unsplash.com/photo-1618172193763-c511deb635ca?w=1200&h=900&fit=crop",
-    description: "Пейзаж с разрушенным храмом, освещение sunset.",
+    title: "2",
+    category: "Пропсы",
+    image: "/works/optimized/2-1200.jpg",
   },
   {
-    id: "3",
-    title: "Sci-Fi Blaster",
+    id: "31",
+    title: "31",
     category: "Пропсы",
-    image: "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=1200&h=900&fit=crop",
-    description: "High-poly модель бластера с PBR-текстурами.",
-    official: true,
-    client: "Private commission",
+    image: "/works/optimized/31-1200.jpg",
   },
   {
     id: "4",
-    title: "Forest Spirit",
+    title: "4",
+    category: "Пропсы",
+    image: "/works/optimized/4-1200.jpg",
+  },
+  {
+    id: "8c23ebf0a315ad3f",
+    title: "8c23ebf0a315ad3f",
+    category: "Пропсы",
+    image: "/works/optimized/8c23ebf0a315ad3f-1200.jpg",
+  },
+  {
+    id: "9",
+    title: "9",
+    category: "Пропсы",
+    image: "/works/optimized/9-1200.jpg",
+  },
+  {
+    id: "daily_daily_isaac_items",
+    title: "Daily daily isaac items",
+    category: "Пропсы",
+    image: "/works/optimized/Daily_daily_isaac_items-1200.jpg",
+  },
+  {
+    id: "image",
+    title: "Image",
+    category: "Пропсы",
+    image: "/works/optimized/image-1200.jpg",
+  },
+  {
+    id: "liveent-apple-image",
+    title: "Liveent Apple",
+    category: "Пропсы",
+    image: "/works/optimized/liveent-apple-image-1200.jpg",
+  },
+  {
+    id: "liveent-cherry",
+    title: "Liveent Cherry",
+    category: "Пропсы",
+    image: "/works/optimized/liveent-cherry-1200.jpg",
+  },
+  {
+    id: "liveent-cookies-romashka",
+    title: "Liveent Cookies Romashka",
+    category: "Пропсы",
+    image: "/works/optimized/liveent-cookies-romashka-1200.jpg",
+  },
+  {
+    id: "LiveАрт",
+    title: "LiveАрт",
     category: "Персонажи",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=900&fit=crop",
-    description: "Мифический персонаж, стилизованный шейдинг.",
+    image: "/works/optimized/LiveАрт-1200.jpg",
   },
   {
-    id: "5",
-    title: "Cyber Alley",
-    category: "Окружение",
-    image: "https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?w=1200&h=900&fit=crop",
-    description: "Ночная улица, атмосферный fog и неон.",
+    id: "MiraKGB1",
+    title: "MiraKGB1",
+    category: "Персонажи",
+    image: "/works/optimized/MiraKGB1-1200.jpg",
   },
   {
-    id: "6",
-    title: "Loop Animation",
+    id: "pawuk",
+    title: "Pawuk",
+    category: "Персонажи",
+    image: "/works/optimized/pawuk-1200.jpg",
+  },
+  {
+    id: "Snowman",
+    title: "Snowman",
+    category: "Персонажи",
+    image: "/works/optimized/Snowman-1200.jpg",
+  },
+  {
+    id: "kat",
+    title: "кат",
+    category: "Персонажи",
+    image: "/works/optimized/кат-1200.jpg",
+  },
+  // Видео (сгенерированные миниатюры см. public/works/*.jpg)
+  {
+    id: "Mom-s-Heels",
+    title: "Mom's Heels",
     category: "Анимация",
-
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=900&fit=crop",
-    description: "Зацикленная анимация абстрактного объекта.",
+    image: "/works/optimized/Mom-s-Heels-1200.jpg",
+    video: "/works/Mom-s-Heels.mp4",
+  },
+  {
+    id: "Mom-s-Lipstick",
+    title: "Mom's Lipstick",
+    category: "Анимация",
+    image: "/works/optimized/Mom-s-Lipstick-1200.jpg",
+    video: "/works/Mom-s-Lipstick.mp4",
+  },
+  {
+    id: "Mom-s-Underwear",
+    title: "Mom's Underwear",
+    category: "Анимация",
+    image: "/works/optimized/Mom-s-Underwear-1200.jpg",
+    video: "/works/Mom-s-Underwear.mp4",
+  },
+  {
+    id: "Wire-Coat-Hanger",
+    title: "Wire Coat Hanger",
+    category: "Анимация",
+    image: "/works/optimized/Wire-Coat-Hanger-1200.jpg",
+    video: "/works/Wire-Coat-Hanger.mp4",
   },
 ];
 
