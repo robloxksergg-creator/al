@@ -94,7 +94,6 @@ function Index() {
               </div>
               <div className="p-5 text-left">
                 <div className="text-xs text-primary uppercase tracking-[0.15em] font-semibold">{w.category}</div>
-                <div className="mt-1 font-display text-xl md:text-2xl text-foreground">{w.title}</div>
               </div>
             </div>
           ))}

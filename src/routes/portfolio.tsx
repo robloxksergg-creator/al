@@ -93,7 +93,6 @@ function Portfolio() {
             <div className="p-4 flex items-center justify-between">
               <div>
                 <div className="text-[11px] text-primary uppercase tracking-wider">{t(catKey[w.category])}</div>
-                <div className="mt-0.5 font-semibold">{w.title}</div>
                 {w.client && (
                   <div className="text-xs text-muted-foreground mt-0.5">{t("pf.for")} {w.client}</div>
                 )}
@@ -136,7 +135,6 @@ function Portfolio() {
             )}
             <div className="text-center">
               <div className="text-xs text-primary uppercase tracking-wider">{t(catKey[active.category])}</div>
-              <div className="text-xl font-semibold">{active.title}</div>
               {active.description && (
                 <div className="mt-1 text-sm text-muted-foreground max-w-xl">{active.description}</div>
               )}
