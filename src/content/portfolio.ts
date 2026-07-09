@@ -45,19 +45,19 @@ export const works: Work[] = [
   {
     id: "2",
     title: "2",
-    category: "Пропсы",
+    category: "Персонажи",
     image: resolveAsset("/works/optimized/2-1200.jpg"),
   },
   {
     id: "31",
     title: "31",
-    category: "Пропсы",
+    category: "Персонажи",
     image: resolveAsset("/works/optimized/31-1200.jpg"),
   },
   {
     id: "4",
     title: "4",
-    category: "Пропсы",
+    category: "Персонажи",
     image: resolveAsset("/works/optimized/4-1200.jpg"),
   },
   {
@@ -81,7 +81,7 @@ export const works: Work[] = [
   {
     id: "image",
     title: "Image",
-    category: "Пропсы",
+    category: "Персонажи",
     image: resolveAsset("/works/optimized/image-1200.jpg"),
   },
   {
@@ -103,10 +103,10 @@ export const works: Work[] = [
     image: resolveAsset("/works/optimized/liveent-cookies-romashka-1200.jpg"),
   },
   {
-    id: "LiveАрт",
-    title: "LiveАрт",
+    id: "Liveart",
+    title: "Liveart",
     category: "Персонажи",
-    image: resolveAsset("/works/optimized/LiveАрт-1200.jpg"),
+    image: resolveAsset("/works/optimized/Liveart-1200.jpg"),
   },
   {
     id: "MiraKGB1",
@@ -128,9 +128,9 @@ export const works: Work[] = [
   },
   {
     id: "kat",
-    title: "кат",
+    title: "kat",
     category: "Персонажи",
-    image: resolveAsset("/works/optimized/кат-1200.jpg"),
+    image: resolveAsset("/works/optimized/kat-1200.jpg"),
   },
   // Видео (сгенерированные миниатюры см. public/works/*.jpg)
   {
