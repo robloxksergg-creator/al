@@ -82,7 +82,7 @@ function Portfolio() {
                 Official
               </div>
             )}
-            <div className={`overflow-hidden ${i % 5 === 0 ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
+            <div className="overflow-hidden aspect-[4/5]">
               <img
                 src={w.image}
                 alt={w.title}

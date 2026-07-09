@@ -13,7 +13,7 @@ export const profile = {
 };
 
 export const socials = {
-  discord: "https://discord.gg/4jpdMN8udx",
+  discord: "https://discord.com/users/490492268063490058",
   allLinks: "https://portaly.cc/LiveEnt",
 };
 
