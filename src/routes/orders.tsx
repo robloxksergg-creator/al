@@ -18,13 +18,43 @@ function Orders() {
   const { t } = useLang();
   const [form, setForm] = useState({ name: "", contact: "", tier: "Standard", brief: "" });
 
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const text = `Order from ${form.name}\nContact: ${form.contact}\nTier: ${form.tier}\n\n${form.brief}`;
-    window.open(socials.discord, "_blank");
-    navigator.clipboard?.writeText(text).catch(() => {});
-    alert(t("ord.copied"));
-  };
+  const submit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("/api/zakazi", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: form.name,
+        discord: form.contact,
+        service: form.tier,
+        budget: form.tier,
+        deadline: "Не указан",
+        description: form.brief,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Ошибка отправки");
+    }
+
+    alert("✅ Заявка успешно отправлена!");
+
+    setForm({
+      name: "",
+      contact: "",
+      tier: "Standard",
+      brief: "",
+    });
+
+  } catch (err) {
+    alert("❌ Не удалось отправить заявку.");
+    console.error(err);
+  }
+};
 
   return (
     <div className="mx-auto max-w-7xl px-6 pt-16 pb-24">
