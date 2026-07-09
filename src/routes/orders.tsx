@@ -18,24 +18,25 @@ function Orders() {
   const { t } = useLang();
   const [form, setForm] = useState({ name: "", contact: "", tier: "Standard", brief: "" });
 
-  const submit = async (e: React.FormEvent) => {
+const submit = async (e: React.FormEvent) => {
   e.preventDefault();
 
   try {
-    const response = await fetch("/api/zakazi", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: form.name,
-        discord: form.contact,
-        service: form.tier,
-        budget: form.tier,
-        deadline: "Не указан",
-        description: form.brief,
-      }),
-    });
+    const response = await fetch(
+      "https://flux-orders.robloxksergg.workers.dev",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          discord: form.contact,
+          service: form.tier,
+          description: form.brief,
+        }),
+      }
+    );
 
     if (!response.ok) {
       throw new Error("Ошибка отправки");
@@ -49,13 +50,11 @@ function Orders() {
       tier: "Standard",
       brief: "",
     });
-
   } catch (err) {
-    alert("❌ Не удалось отправить заявку.");
     console.error(err);
+    alert("❌ Не удалось отправить заявку.");
   }
 };
-
   return (
     <div className="mx-auto max-w-7xl px-6 pt-16 pb-24">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
