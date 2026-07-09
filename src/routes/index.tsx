@@ -84,7 +84,7 @@ function Index() {
               key={w.id}
               className={`tilt-card glass glow-border rounded-2xl overflow-hidden group ${i === 1 ? "md:mt-10" : ""}`}
             >
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="overflow-hidden h-[500px] bg-red-500">
                 <img
                   src={w.image}
                   alt={w.title}
