@@ -93,8 +93,8 @@
 .aurora-bg::after {
   content: "";
   position: absolute;
-  width: 55vmax;
-  height: 55vmax;
+  width: 33vmax;
+  height: 33vmax;
   border-radius: 50%;
   filter: blur(90px);
   opacity: 0.5;
