@@ -72,9 +72,7 @@ function Portfolio() {
           <button
             key={w.id}
             onClick={() => setActive(w)}
-            className={`tilt-card glass glow-border rounded-2xl overflow-hidden text-left group relative ${
-              i % 5 === 0 ? "sm:col-span-2 sm:row-span-1" : ""
-            }`}
+            className="tilt-card glass glow-border rounded-2xl overflow-hidden text-left group relative"
           >
             {w.official && (
               <div className="absolute top-3 left-3 z-10 inline-flex items-center gap-1 rounded-full bg-primary/95 text-primary-foreground px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider shadow-md">
